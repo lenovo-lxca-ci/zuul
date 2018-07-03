@@ -4,5 +4,5 @@
     exclude-unprotected-branches: false
     source:
       gerrit:
-        untrusted-projects:
+        config-projects:
           - openstack/ironic
