@@ -1,2 +1,8 @@
 - tenant:
-    name: quickstart
+    name: openstack
+    max-nodes-per-job: 5
+    exclude-unprotected-branches: false
+    source:
+      gerrit:
+        untrusted-projects:
+          - openstack/ironic
