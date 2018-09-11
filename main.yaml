@@ -7,7 +7,9 @@
         untrusted-projects:
           - openstack/ironic
           - openstack/ironic-inspector
+          - openstack/ironic-lib
           - openstack/ironic-python-agent
+          - openstack/python-ironicclient
           - openstack/ironic-tempest-plugin
           - openstack/pyghmi
           - openstack/virtualbmc
