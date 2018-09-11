@@ -27,8 +27,10 @@
               - openstack/glare
               - openstack/heat
               - openstack/intel-nfv-ci-tests
-              - openstack/ironic
               - openstack/ironic-inspector
+              - openstack/ironic-lib
+              - openstack/ironic-python-agent
+              - openstack/ironic-tempest-plugin
               - openstack/keystone-tempest-plugin
               - openstack/kingbird
               - openstack/kuryr-tempest-plugin
@@ -61,6 +63,7 @@
               - openstack/oswin-tempest-plugin
               - openstack/panko
               - openstack/patrole
+              - openstack/pyghmi
               - openstack/qinling
               - openstack/requirements
               - openstack/sahara-tests
@@ -76,3 +79,5 @@
               - openstack/watcher-tempest-plugin
               - openstack/zaqar-tempest-plugin
               - openstack/zun-tempest-plugin
+              - openstack-dev/grenade
+              - openstack-infra/devstack-gate
