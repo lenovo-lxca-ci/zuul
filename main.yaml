@@ -10,22 +10,36 @@
             projects:
               - openstack/ironic
               - openstack/tempest
+              - openstack-infra/openstack-zuul-jobs
+              - openstack-infra/zuul-jobs
           - include: []
             projects:
               - openstack/almanach
               - openstack/aodh
+              - openstack/ara
+              - openstack/automaton
+              - openstack/barbican
               - openstack/barbican-tempest-plugin
+              - openstack/castellan
               - openstack/ceilometer
+              - openstack/ceilometermiddleware
               - openstack/cinder
               - openstack/congress
+              - openstack/debtcollector
               - openstack/designate-tempest-plugin
+              - openstack/devstack-plugin-container
+              - openstack/dib-utils
+              - openstack/diskimage-builder
               - openstack/ec2-api
               - openstack/freezer
               - openstack/freezer-api
               - openstack/freezer-tempest-plugin
+              - openstack/fuel-ccp
+              - openstack/futurist
               - openstack/gce-api
               - openstack/glare
               - openstack/heat
+              - openstack/horizon
               - openstack/intel-nfv-ci-tests
               - openstack/ironic-inspector
               - openstack/ironic-lib
@@ -43,6 +57,7 @@
               - openstack/monasca-api
               - openstack/monasca-log-api
               - openstack/murano
+              - openstack/murano-dashboard
               - openstack/networking-bgpvpn
               - openstack/networking-cisco
               - openstack/networking-fortinet
@@ -55,16 +70,25 @@
               - openstack/neutron-dynamic-routing
               - openstack/neutron-fwaas
               - openstack/neutron-lbaas
+              - openstack/neutron-lib
               - openstack/neutron-tempest-plugin
               - openstack/neutron-vpnaas
               - openstack/nova-lxd
               - openstack/novajoin-tempest-plugin
               - openstack/octavia-tempest-plugin
               - openstack/oswin-tempest-plugin
+              - openstack/ovsdbapp
               - openstack/panko
               - openstack/patrole
+              - openstack/puppet-aodh
+              - openstack/puppet-barbican
+              - openstack/puppet-ceilometer
               - openstack/pyghmi
+              - openstack/python-ironicclient
+              - openstack/python-ironic-inspector-client
+              - openstack/python-muranoclient
               - openstack/qinling
+              - openstack/releases
               - openstack/requirements
               - openstack/sahara-tests
               - openstack/senlin
@@ -74,10 +98,239 @@
               - openstack/trio2o
               - openstack/trove
               - openstack/valet
+              - openstack/virtualbmc
               - openstack/vitrage
               - openstack/vmware-nsx-tempest-plugin
               - openstack/watcher-tempest-plugin
               - openstack/zaqar-tempest-plugin
               - openstack/zun-tempest-plugin
+              - openstack-dev/devstack
               - openstack-dev/grenade
+              - openstack-infra/ansible-role-puppet
               - openstack-infra/devstack-gate
+              - openstack-infra/grafyaml
+              - openstack-infra/os-loganalyze
+              - openstack-infra/project-config
+              - openstack-infra/puppet-accessbot
+              - openstack-infra/puppet-bugdaystats
+              - openstack-infra/puppet-openstack_infra_spec_helper
+              - openstack-infra/system-config
+              - openstack-infra/tripleo-ci
+              - openstack-infra/zuul
+              - openstack/osprofiler
+              - openstack/django_openstack_auth
+              - openstack/puppet-ceph
+              - openstack-infra/puppet-ansible
+              - openstack-infra/puppet-mysql_backup
+              - openstack/cursive
+              - openstack/sahara
+              - openstack/fuxi
+              - openstack/python-glareclient
+              - openstack/oslo.cache
+              - openstack/glance
+              - openstack/puppet-cinder
+              - openstack-infra/puppet-apparmor
+              - openstack-infra/puppet-openstackci
+              - openstack/nova
+              - openstack/sahara-dashboard
+              - openstack/keystoneauth
+              - openstack/group-based-policy
+              - openstack/oslo.concurrency
+              - openstack/glance_store
+              - openstack/puppet-cloudkitty
+              - openstack-infra/puppet-askbot
+              - openstack-infra/puppet-zuul
+              - openstack/python-barbicanclient
+              - openstack/os-client-config
+              - openstack/group-based-policy-automation
+              - openstack/oslo.config
+              - openstack/heat-cfntools
+              - openstack/puppet-congress
+              - openstack-infra/puppet-asterisk
+              - openstack-infra/puppet-mqtt_statsd
+              - openstack/python-cinderclient
+              - openstack/group-based-policy-ui
+              - openstack/oslo.context
+              - openstack/heat-templates
+              - openstack/puppet-designate
+              - openstack-infra/puppet-bandersnatch
+              - openstack-infra/puppet-meetbot
+              - openstack/python-glanceclient
+              - openstack/python-group-based-policy-client
+              - openstack/oslo.db
+              - openstack/keystone
+              - openstack/puppet-ec2api
+              - openstack-infra/puppet-bup
+              - openstack-infra/puppet-hound
+              - openstack/python-keystoneclient
+              - openstack/rally
+              - openstack/js-openstack-lib
+              - openstack/oslo.i18n
+              - openstack/oslo.log
+              - openstack/oslo.messaging
+              - openstack/oslo.middleware
+              - openstack/oslo.policy
+              - openstack/oslo.privsep
+              - openstack/oslo.reports
+              - openstack/oslo.rootwrap
+              - openstack/oslo.serialization
+              - openstack/oslo.service
+              - openstack/oslo.utils
+              - openstack/oslo.versionedobjects
+              - openstack/oslo.vmware
+              - openstack/oslosphinx
+              - openstack/oslotest
+              - openstack/pycadf
+              - openstack/stevedore
+              - openstack/taskflow
+              - openstack/tooz
+              - openstack-dev/pbr
+              - openstack/keystonemiddleware
+              - openstack/puppet-glance
+              - openstack-infra/puppet-cgit
+              - openstack-infra/puppet-pip
+              - openstack/python-neutronclient
+              - openstack-infra/logstash-filters
+              - openstack/networking-bagpipe
+              - openstack/manila-ui
+              - openstack/puppet-gnocchi
+              - openstack-infra/puppet-ciwatch
+              - openstack-infra/puppet-os_client_config
+              - openstack/python-novaclient
+              - openstack-infra/puppet-diskimage_builder
+              - openstack/networking-odl
+              - openstack/networking-vpp
+              - openstack/puppet-openstack-integration
+              - openstack/octavia
+              - openstack/puppet-heat
+              - openstack-infra/puppet-drupal
+              - openstack-infra/puppet-openstackid
+              - openstack/scalpels
+              - openstack/os-apply-config
+              - openstack/puppet-horizon
+              - openstack-infra/puppet-elastic_recheck
+              - openstack-infra/puppet-project_config
+              - openstack/python-magnumclient
+              - openstack/sqlalchemy-migrate
+              - openstack/os-brick
+              - openstack/puppet-ironic
+              - openstack-infra/puppet-elasticsearch
+              - openstack-infra/puppet-grafyaml
+              - openstack/python-senlinclient
+              - openstack/swift
+              - openstack/os-collect-config
+              - openstack/puppet-keystone
+              - openstack-infra/puppet-ethercalc
+              - openstack-infra/puppet-refstack
+              - openstack/python-watcherclient
+              - openstack/python-swiftclient
+              - openstack/os-net-config
+              - openstack/puppet-manila
+              - openstack-infra/puppet-etherpad_lite
+              - openstack-infra/puppet-github
+              - openstack/python-zaqarclient
+              - openstack/devstack-plugin-bdd
+              - openstack/os-refresh-config
+              - openstack/puppet-mistral
+              - openstack-infra/puppet-exim
+              - openstack-infra/puppet-unattended_upgrades
+              - openstack/tripleo-image-elements
+              - openstack/devstack-plugin-ceph
+              - openstack/osc-lib
+              - openstack/puppet-modulesync-configs
+              - openstack-infra/puppet-germqtt
+              - openstack-infra/puppet-graphite
+              - openstack-infra/puppet-haveged
+              - openstack-infra/puppet-httpd
+              - openstack-infra/puppet-infracloud
+              - openstack-infra/puppet-infra-cookiecutter
+              - openstack-infra/puppet-ipsilon
+              - openstack-infra/puppet-iptables
+              - openstack-infra/puppet-jeepyb
+              - openstack-infra/puppet-jenkins
+              - openstack-infra/puppet-kerberos
+              - openstack-infra/puppet-kibana
+              - openstack-infra/puppet-lodgeit
+              - openstack-infra/puppet-log_processor
+              - openstack-infra/puppet-logrotate
+              - openstack-infra/puppet-logstash
+              - openstack-infra/puppet-lpmqtt
+              - openstack-infra/puppet-mailman
+              - openstack-infra/puppet-mediawiki
+              - openstack-infra/puppet-mosquitto
+              - openstack-infra/puppet-nodepool
+              - openstack-infra/puppet-openafs
+              - openstack-infra/puppet-openstack_health
+              - openstack-infra/puppet-packagekit
+              - openstack-infra/puppet-pgsql_backup
+              - openstack-infra/puppet-phabricator
+              - openstack-infra/puppet-planet
+              - openstack-infra/puppet-ptgbot
+              - openstack-infra/puppet-puppet
+              - openstack-infra/puppet-redis
+              - openstack-infra/puppet-reviewday
+              - openstack-infra/puppet-simpleproxy
+              - openstack-infra/puppet-snmpd
+              - openstack-infra/puppet-ssh
+              - openstack-infra/puppet-ssl_cert_check
+              - openstack-infra/puppet-statusbot
+              - openstack-infra/puppet-storyboard
+              - openstack-infra/puppet-subunit2sql
+              - openstack-infra/puppet-sudoers
+              - openstack-infra/puppet-tmpreaper
+              - openstack-infra/puppet-translation_checksite
+              - openstack-infra/puppet-ulimit
+              - openstack-infra/puppet-unbound
+              - openstack-infra/puppet-user
+              - openstack-infra/puppet-vcsrepo
+              - openstack-infra/puppet-yum
+              - openstack-infra/puppet-zanata
+              - openstack/tripleo-heat-templates
+              - openstack/puppet-monasca
+              - openstack-infra/puppet-gerrit
+              - openstack-infra/puppet-gerritbot
+              - openstack/watcher
+              - openstack/devstack-plugin-nfs
+              - openstack/zaqar
+              - openstack/puppet-murano
+              - openstack/puppet-neutron
+              - openstack/puppet-nova
+              - openstack/puppet-octavia
+              - openstack/puppet-openstack-cookiecutter
+              - openstack/puppet-openstack_extras
+              - openstack/puppet-openstacklib
+              - openstack/puppet-oslo
+              - openstack/puppet-ovn
+              - openstack/puppet-panko
+              - openstack/puppet-qdr
+              - openstack/puppet-sahara
+              - openstack/puppet-swift
+              - openstack/puppet-tacker
+              - openstack/puppet-tempest
+              - openstack/puppet-trove
+              - openstack/puppet-vswitch
+              - openstack/puppet-vitrage
+              - openstack/puppet-watcher
+              - openstack/puppet-zaqar
+              - openstack-infra/puppet-stackalytics
+              - openstack/zaqar-ui
+              - openstack/drbd-devstack
+              - openstack/devstack-plugin-hdfs
+              - openstack/devstack-plugin-sheepdog
+              - openstack/virtualpdu
+              - openstack/monasca-agent
+              - openstack/networking-onos
+              - openstack/networking-ovn
+              - openstack/networking-ovs-dpdk
+              - openstack/devstack-plugin-additional-pkg-repos
+              - openstack/devstack-plugin-zmq
+              - openstack/tricircle
+              - openstack/monasca-common
+              - openstack/monasca-grafana-datasource
+              - openstack/monasca-notification
+              - openstack/monasca-persister
+              - openstack/monasca-statsd
+              - openstack/monasca-thresh
+              - openstack/monasca-transform
+              - openstack/monasca-ui
+              - openstack/python-monascaclient
