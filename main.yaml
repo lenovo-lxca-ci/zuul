@@ -12,19 +12,6 @@
               - openstack/tempest
           - include: []
             projects:
-              - openstack/ironic-inspector
-              - openstack/python-ironic-inspector-client
-              - openstack/ironic-lib
-              - openstack/ironic-python-agent
-              - openstack/python-ironicclient
-              - openstack/ironic-tempest-plugin
-              - openstack/networking-generic-switch
-              - openstack-dev/grenade
-              - openstack-infra/devstack-gate
-              - openstack/pyghmi
-              - openstack/virtualbmc
-              - openstack/ara
-              - openstack/requirements
               - openstack/almanach
               - openstack/aodh
               - openstack/barbican-tempest-plugin
