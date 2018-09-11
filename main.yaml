@@ -4,5 +4,12 @@
     exclude-unprotected-branches: false
     source:
       gerrit:
-        config-projects:
+        untrusted-projects:
           - openstack/ironic
+          - openstack/ironic-inspector
+          - openstack/ironic-python-agent
+          - openstack/ironic-tempest-plugin
+          - openstack/pyghmi
+          - openstack/virtualbmc
+
+
