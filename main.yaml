@@ -3,17 +3,20 @@
     max-nodes-per-job: 5
     exclude-unprotected-branches: false
     source:
+      local:
+        trusted-projects:
+          - zuul.d
       gerrit:
         untrusted-projects:
           - include:
               - job
             projects:
-              - openstack/ironic
-              - openstack/tempest
               - openstack-infra/openstack-zuul-jobs
               - openstack-infra/zuul-jobs
           - include: []
             projects:
+              - openstack/ironic
+              - openstack/tempest
               - openstack/almanach
               - openstack/aodh
               - openstack/ara
