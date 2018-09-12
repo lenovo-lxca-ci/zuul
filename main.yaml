@@ -5,7 +5,10 @@
     source:
       local:
         config-projects:
-          - zuul.d
+          - include:
+              - job
+            projects:
+              - zuul.d
       gerrit:
         untrusted-projects:
           - include:
