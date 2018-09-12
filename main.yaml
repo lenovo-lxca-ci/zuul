@@ -4,17 +4,18 @@
     exclude-unprotected-branches: false
     source:
       local:
-        trusted-projects:
+        config-projects:
           - zuul.d
       gerrit:
         untrusted-projects:
           - include:
               - job
             projects:
-              - openstack-infra/openstack-zuul-jobs
               - openstack-infra/zuul-jobs
           - include: []
             projects:
+              - openstack-infra/openstack-zuul-jobs
+              - openstack-dev/ci-sandbox
               - openstack/ironic
               - openstack/tempest
               - openstack/almanach
