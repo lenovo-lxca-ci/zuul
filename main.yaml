@@ -8,10 +8,10 @@
           - zuul-local
       gerrit:
         untrusted-projects:
-          #- include:
-          #    - job
-          #  projects:
-          #    - openstack-infra/zuul-jobs
+          - include:
+              - job
+            projects:
+              - openstack-infra/zuul-jobs
           - include: []
             projects:
               - openstack-dev/ci-sandbox
