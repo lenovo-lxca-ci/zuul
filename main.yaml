@@ -14,5 +14,5 @@
               - openstack-infra/zuul-jobs
           - include: []
             projects:
-              - openstack-dev/ci-sandbox
+              #- openstack-dev/ci-sandbox
               - openstack/ironic
